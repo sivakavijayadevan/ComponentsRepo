@@ -1,5 +1,5 @@
 {
-  "name": "multi-language-components",
+  "name": "@multilingual/angular-multilingual-library",
   "version": "1.0.0",
   "description": "Multi Language Component for angular2",
   "scripts": {
