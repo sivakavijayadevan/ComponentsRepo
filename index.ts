@@ -1,16 +1,20 @@
 import {NgModule, ModuleWithProviders} from '@angular/core';
 
-import {MultiLangLabelComponentModule} from './MultiLangLabel/src/multi-lang-label.component.module';
+import {MultiLangLabelComponentModule} from './Components/MultiLangLabel/src/multi-lang-label.component.module';
+import {MultiLangLabelPipeModule} from './Pipes/MultiLangLabel/src/multi-lang-label.pipe.module';
 
-export {MultiLangLabelComponentModule} from './MultiLangLabel/src/multi-lang-label.component.module';
+export {MultiLangLabelComponentModule} from './Components/MultiLangLabel/src/multi-lang-label.component.module';
+export {MultiLangLabelPipeModule} from './Pipes/MultiLangLabel/src/multi-lang-label.pipe.module';
 
 const MLC_MODULES = [
-    MultiLangLabelComponentModule
+    MultiLangLabelComponentModule,
+    MultiLangLabelPipeModule
 ];
 
 @NgModule({
   imports: [
-    MultiLangLabelComponentModule.forRoot()
+    MultiLangLabelComponentModule.forRoot(),
+    MultiLangLabelPipeModule.forRoot()
   ],
   exports: MLC_MODULES
 })

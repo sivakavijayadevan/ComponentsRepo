@@ -21,8 +21,7 @@ var MultiLangLabelComponentModule = (function () {
         core_1.NgModule({
             declarations: [multi_lang_label_component_1.MultiLangLabelComponent],
             exports: [multi_lang_label_component_1.MultiLangLabelComponent],
-            imports: [common_1.CommonModule],
-            entryComponents: [multi_lang_label_component_1.MultiLangLabelComponent]
+            imports: [common_1.CommonModule]
         }), 
         __metadata('design:paramtypes', [])
     ], MultiLangLabelComponentModule);

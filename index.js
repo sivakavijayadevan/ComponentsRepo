@@ -9,11 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var multi_lang_label_component_module_1 = require('./MultiLangLabel/src/multi-lang-label.component.module');
-var multi_lang_label_component_module_2 = require('./MultiLangLabel/src/multi-lang-label.component.module');
+var multi_lang_label_component_module_1 = require('./Components/MultiLangLabel/src/multi-lang-label.component.module');
+var multi_lang_label_pipe_module_1 = require('./Pipes/MultiLangLabel/src/multi-lang-label.pipe.module');
+var multi_lang_label_component_module_2 = require('./Components/MultiLangLabel/src/multi-lang-label.component.module');
 exports.MultiLangLabelComponentModule = multi_lang_label_component_module_2.MultiLangLabelComponentModule;
+var multi_lang_label_pipe_module_2 = require('./Pipes/MultiLangLabel/src/multi-lang-label.pipe.module');
+exports.MultiLangLabelPipeModule = multi_lang_label_pipe_module_2.MultiLangLabelPipeModule;
 var MLC_MODULES = [
-    multi_lang_label_component_module_1.MultiLangLabelComponentModule
+    multi_lang_label_component_module_1.MultiLangLabelComponentModule,
+    multi_lang_label_pipe_module_1.MultiLangLabelPipeModule
 ];
 var MultiLanguageComponentRootModule = (function () {
     function MultiLanguageComponentRootModule() {
@@ -21,7 +25,8 @@ var MultiLanguageComponentRootModule = (function () {
     MultiLanguageComponentRootModule = __decorate([
         core_1.NgModule({
             imports: [
-                multi_lang_label_component_module_1.MultiLangLabelComponentModule.forRoot()
+                multi_lang_label_component_module_1.MultiLangLabelComponentModule.forRoot(),
+                multi_lang_label_pipe_module_1.MultiLangLabelPipeModule.forRoot()
             ],
             exports: MLC_MODULES
         }), 
